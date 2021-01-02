@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Квест открытка</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+</head>
+<body>
+	<script type="text/javascript">
+		// function myFun() {
+		// 	var password = document.getElementById("login").value;
+		// 	// alert(password);
+		// 	if (password == 191003) {
+		// 		var input = document.createElement("input");
+		// 		input.setAttribute('type', 'text');
+		// 		var parent = document.getElementById("parentDiv");
+		// 		parent.appendChild(input);
+		// 	}
+		// 	else{
+		// 		alert('Пароль неверный')
+		// 	}
+		// }
+		function disp(form) {
+        	if (form.style.display == "none") {
+            	form.style.display = "block";
+        	} else {
+        	    form.style.display = "none";
+        	}
+    	}
+    	function confirm() {
+    		var cod = document.getElementById("two").value;
+    		if (cod == 326){
+    			let mesto = document.getElementById("four").value;
+    			document.getElementById("write").innerHTML = mesto;
+
+    		}
+    	}
+	</script>
+	<input type="text" id="two" class="ex_number">
+	<a class="first" onclick="confirm()">ОК</a>
+	<h1 class="gift" id="write">Подарок находиться:</h1>
+	<!-- <h1 id="write" class="place-gift">trefd</h1> -->
+	<form class="form"></form>
+	<img src="logo.png" class="logo" align="center">
+	<!-- <input type="text" id="login" class="login-text"> -->
+	<button type="submit" class="btn btn-success"  onclick="disp(document.getElementById('form1'))" style="margin: 10px;">Проверить</button>
+	<form id="form1" style="display: none;">
+        <input type="text" placeholder="Введите место" id="four">
+    </form>
+     <!-- <input type="button" value="Показать/Скрыть" onclick="disp(document.getElementById('form1'))" /> -->
+
+</body>
+</html>
